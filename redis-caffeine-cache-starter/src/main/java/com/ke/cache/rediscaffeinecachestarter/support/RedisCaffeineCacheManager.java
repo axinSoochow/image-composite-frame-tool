@@ -10,6 +10,7 @@ import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.util.CollectionUtils;
+import org.springframework.util.StringUtils;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
@@ -18,13 +19,13 @@ import java.util.concurrent.TimeUnit;
 
 @Slf4j
 public class RedisCaffeineCacheManager implements CacheManager {
-	
+
 	private final Logger logger = LoggerFactory.getLogger(RedisCaffeineCacheManager.class);
-	
+
 	private static ConcurrentMap<String, Cache> cacheMap = new ConcurrentHashMap<String, Cache>();
-	
+
 	private CacheRedisCaffeineProperties cacheRedisCaffeineProperties;
-	
+
 	private RedisTemplate<Object, Object> stringKeyRedisTemplate;
 
 	private boolean dynamic = true;
@@ -82,18 +83,18 @@ public class RedisCaffeineCacheManager implements CacheManager {
 		if(!dynamic && !cacheNames.contains(name)) {
 			return null;
 		}
-		
+
 		cache = new RedisCaffeineCache(name, stringKeyRedisTemplate, caffeineCache(name), cacheRedisCaffeineProperties);
 		Cache oldCache = cacheMap.putIfAbsent(name, cache);
 		logger.debug("create cache instance, the cache name is : {}", name);
 		return oldCache == null ? cache : oldCache;
 	}
-	
+
 	@Override
 	public Collection<String> getCacheNames() {
 		return this.cacheNames;
 	}
-	
+
 	public void clearLocal(String cacheName, Object key) {
 		//cacheName为null 清除所有进程缓存
 		if (cacheName == null) {
@@ -106,11 +107,12 @@ public class RedisCaffeineCacheManager implements CacheManager {
 		if(cache == null) {
 			return;
 		}
-		
+
 		RedisCaffeineCache redisCaffeineCache = (RedisCaffeineCache) cache;
 		redisCaffeineCache.clearLocal(key);
 	}
 
+	//———————————————————————————————————————————————————————————————————————
 	/**
      * 实例化本地一级缓存
 	 * @param name
@@ -118,26 +120,7 @@ public class RedisCaffeineCacheManager implements CacheManager {
      */
 	private com.github.benmanes.caffeine.cache.Cache<Object, Object> caffeineCache(String name) {
 		Caffeine<Object, Object> cacheBuilder = Caffeine.newBuilder();
-		CacheRedisCaffeineProperties.CacheDefault cacheConfig;
-		switch (name) {
-			case CacheNames.CACHE_15MINS:
-				cacheConfig = cacheRedisCaffeineProperties.getCache15m();
-				break;
-			case CacheNames.CACHE_30MINS:
-				cacheConfig = cacheRedisCaffeineProperties.getCache30m();
-				break;
-			case CacheNames.CACHE_60MINS:
-				cacheConfig = cacheRedisCaffeineProperties.getCache60m();
-				break;
-			case CacheNames.CACHE_180MINS:
-				cacheConfig = cacheRedisCaffeineProperties.getCache180m();
-				break;
-			case CacheNames.CACHE_12HOUR:
-				cacheConfig = cacheRedisCaffeineProperties.getCache12h();
-				break;
-			default:
-				cacheConfig = cacheRedisCaffeineProperties.getCacheDefault();
-		}
+		CacheRedisCaffeineProperties.CacheDefault cacheConfig = getLocalCacheConfig(name);
 		long expireAfterAccess = cacheConfig.getExpireAfterAccess();
 		long expireAfterWrite = cacheConfig.getExpireAfterWrite();
 		int initialCapacity = cacheConfig.getInitialCapacity();
@@ -167,4 +150,34 @@ public class RedisCaffeineCacheManager implements CacheManager {
 		cacheBuilder.recordStats();
 		return cacheBuilder.build();
 	}
+
+	/**
+	 * 获得本地缓存定制化配置
+	 * @param name
+	 * @return
+	 */
+	private CacheRedisCaffeineProperties.CacheDefault getLocalCacheConfig(String name) {
+		if (StringUtils.isEmpty(name)) {
+			return cacheRedisCaffeineProperties.getCacheDefault();
+		}
+
+		// 只要包含关键字，便命中对应的local缓存
+		if (name.contains(CacheNames.CACHE_15MINS)) {
+			return cacheRedisCaffeineProperties.getCache15m();
+		}
+		if (name.contains(CacheNames.CACHE_30MINS)) {
+			return cacheRedisCaffeineProperties.getCache30m();
+		}
+		if (name.contains(CacheNames.CACHE_60MINS)) {
+			return cacheRedisCaffeineProperties.getCache60m();
+		}
+		if (name.contains(CacheNames.CACHE_180MINS)) {
+			return cacheRedisCaffeineProperties.getCache180m();
+		}
+		if (name.contains(CacheNames.CACHE_12HOUR)) {
+			return cacheRedisCaffeineProperties.getCache12h();
+		}
+		return cacheRedisCaffeineProperties.getCacheDefault();
+	}
+
 }
