@@ -10,7 +10,7 @@
 
     <groupId>com.ke.cache</groupId>
     <artifactId>redis-caffeine-cache-starter</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.1.0-SNAPSHOT</version>
     <name>redis-caffeine-cache-starter</name>
     <description>分布式二级缓存装载组件</description>
 
