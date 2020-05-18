@@ -7,6 +7,7 @@ cache.multi:
   redis:
     topic: accounting:cache:redis:caffeine:topic # 缓存淘汰通知topic
     defaultExpiration: 600 #二级缓存默认redis过期时间，单位秒，默认3600s
+    expires: {"cache:15m": 1,"cache:30m": 1,"cache:60m": 1,"cache:180m": 1,"cache:12h": 1} #redis一级缓存淘汰时间为1s 可方便开发与测试
 
   # 针对自定义cacheName的本地一级缓存配置
   cacheDefault:
