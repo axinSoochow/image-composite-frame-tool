@@ -20,7 +20,9 @@ import org.springframework.data.redis.listener.RedisMessageListenerContainer;
 @EnableConfigurationProperties(CacheRedisCaffeineProperties.class)
 @Slf4j
 public class CacheRedisCaffeineAutoConfiguration {
-	
+
+	public static String 分布式二级缓存 = "L2_CacheManager";
+
 	@Autowired
 	private CacheRedisCaffeineProperties cacheRedisCaffeineProperties;
 
