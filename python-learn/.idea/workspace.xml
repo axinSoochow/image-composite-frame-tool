@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5a2dee37-adb0-45f9-a1b3-806f567a4b3c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
+  <component name="ProjectId" id="1b7M4bJJpNNG9qRU0Vw0OhMUX26" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="jdk.selected.PYTHON_MODULE" value="Python 3.7" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web-learn/learn" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.14355469" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web-learn/learn/fmp/CRM" />
+      <recent name="$PROJECT_DIR$/web-learn/learn/redis" />
+      <recent name="$PROJECT_DIR$/web-learn" />
+      <recent name="$PROJECT_DIR$/learn" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web-learn/learn" />
+      <recent name="$PROJECT_DIR$/learn" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.fmp_validate">
+    <configuration name="clear_redis (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="web-learn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web-learn/learn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web-learn/learn/clear_redis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="clear_redis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="web-learn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web-learn/learn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web-learn/learn/redis/clear_redis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="clear_redis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python-learn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn/clear_redis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="fmpValidateProcess" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="web-learn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web-learn/learn/fmp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web-learn/learn/fmp/fmpValidateProcess.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="fmp_create" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="web-learn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web-learn/learn/fmp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web-learn/learn/fmp/fmp_create.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="fmp_validate" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="web-learn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web-learn/learn/fmp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web-learn/learn/fmp/fmp_validate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pyhton-run" type="PythonConfigurationType" factoryName="Python">
+      <module name="python-learn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.pyhton-run" />
+      <item itemvalue="Python.clear_redis" />
+      <item itemvalue="Python.fmp_validate" />
+      <item itemvalue="Python.fmpValidateProcess" />
+      <item itemvalue="Python.clear_redis (1)" />
+      <item itemvalue="Python.fmp_create" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.fmp_validate" />
+        <item itemvalue="Python.fmp_create" />
+        <item itemvalue="Python.fmpValidateProcess" />
+        <item itemvalue="Python.clear_redis" />
+        <item itemvalue="Python.clear_redis (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5a2dee37-adb0-45f9-a1b3-806f567a4b3c" name="Default Changelist" comment="" />
+      <created>1587978489262</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587978489262</updated>
+      <workItem from="1587978491670" duration="2694000" />
+      <workItem from="1587989498849" duration="1335000" />
+      <workItem from="1588068111361" duration="4591000" />
+      <workItem from="1588160728007" duration="2567000" />
+      <workItem from="1588937710766" duration="88000" />
+      <workItem from="1589444542009" duration="26874000" />
+      <workItem from="1589773598664" duration="63000" />
+    </task>
+    <task id="LOCAL-00001" summary="清理缓存py脚本">
+      <created>1587979958684</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587979958685</updated>
+    </task>
+    <task id="LOCAL-00002" summary="清理缓存py脚本2">
+      <created>1588162044352</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588162044352</updated>
+    </task>
+    <task id="LOCAL-00003" summary="清理缓存py脚本3">
+      <created>1588162707029</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588162707030</updated>
+    </task>
+    <task id="LOCAL-00004" summary="中台接口 自动化 测试脚本">
+      <created>1589464467152</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589464467152</updated>
+    </task>
+    <task id="LOCAL-00005" summary="中台接口 自动化 创建数据脚本">
+      <created>1589527349172</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589527349172</updated>
+    </task>
+    <task id="LOCAL-00006" summary="初始化">
+      <created>1589528554201</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1589528554201</updated>
+    </task>
+    <task id="LOCAL-00007" summary="初始化2">
+      <created>1589530647090</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1589530647090</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="清理缓存py脚本" />
+    <MESSAGE value="清理缓存py脚本2" />
+    <MESSAGE value="清理缓存py脚本3" />
+    <MESSAGE value="自动化 厕纸" />
+    <MESSAGE value="中台接口 自动化 测试脚本" />
+    <MESSAGE value="中台接口 自动化 创建数据脚本" />
+    <MESSAGE value="初始化" />
+    <MESSAGE value="初始化2" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始化2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1903" y="37" key="#Project_Structure" timestamp="1588160773817">
+      <screen x="1440" y="-157" width="1864" height="1057" />
+    </state>
+    <state x="1903" y="37" key="#Project_Structure/0.23.1440.877/1440.-157.1864.1057@1440.-157.1864.1057" timestamp="1588160773817" />
+    <state x="1669" y="10" width="1262" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587978590424">
+      <screen x="1440" y="-157" width="1864" height="1057" />
+    </state>
+    <state x="1669" y="10" width="1262" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877/1440.-157.1864.1057@1440.-157.1864.1057" timestamp="1587978590424" />
+    <state x="2012" y="180" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589444979813">
+      <screen x="1440" y="-157" width="1865" height="1057" />
+    </state>
+    <state x="2012" y="180" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877/1440.-157.1865.1057@1440.-157.1865.1057" timestamp="1589444979813" />
+    <state x="2185" y="94" key="#com.intellij.ide.util.MemberChooser" timestamp="1589447556900">
+      <screen x="1440" y="-157" width="1865" height="1057" />
+    </state>
+    <state x="2185" y="94" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877/1440.-157.1865.1057@1440.-157.1865.1057" timestamp="1589447556900" />
+    <state x="2013" y="82" width="832" height="711" key="#xdebugger.evaluate" timestamp="1589464051239">
+      <screen x="1440" y="-157" width="1865" height="1057" />
+    </state>
+    <state x="2013" y="82" width="832" height="711" key="#xdebugger.evaluate/0.23.1440.877/1440.-157.1865.1057@1440.-157.1865.1057" timestamp="1589464051239" />
+    <state x="1906" y="-28" key="CommitChangelistDialog2" timestamp="1589530646840">
+      <screen x="1440" y="-157" width="1865" height="1057" />
+    </state>
+    <state x="1906" y="-28" key="CommitChangelistDialog2/0.23.1440.877/1440.-157.1864.1057@1440.-157.1864.1057" timestamp="1588162706807" />
+    <state x="1906" y="-28" key="CommitChangelistDialog2/0.23.1440.877/1440.-157.1865.1057@1440.-157.1865.1057" timestamp="1589530646840" />
+    <state width="305" height="227" key="Git.Branch.Popup" timestamp="1589528762092">
+      <screen x="1440" y="-157" width="1865" height="1057" />
+    </state>
+    <state width="289" height="186" key="Git.Branch.Popup/0.23.1440.877/1440.-157.1864.1057@1440.-157.1864.1057" timestamp="1588162053485" />
+    <state width="305" height="227" key="Git.Branch.Popup/0.23.1440.877/1440.-157.1865.1057@1440.-157.1865.1057" timestamp="1589528762092" />
+    <state width="1820" height="289" key="GridCell.Tab.0.bottom" timestamp="1589531747800">
+      <screen x="1440" y="-157" width="1865" height="1057" />
+    </state>
+    <state width="1820" height="221" key="GridCell.Tab.0.bottom/0.23.1384.877@0.23.1384.877" timestamp="1588220530050" />
+    <state width="1820" height="221" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.-157.1864.1057@1440.-157.1864.1057" timestamp="1588162420064" />
+    <state width="1820" height="289" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.-157.1865.1057@1440.-157.1865.1057" timestamp="1589531747800" />
+    <state width="1820" height="289" key="GridCell.Tab.0.center" timestamp="1589531747799">
+      <screen x="1440" y="-157" width="1865" height="1057" />
+    </state>
+    <state width="1820" height="221" key="GridCell.Tab.0.center/0.23.1384.877@0.23.1384.877" timestamp="1588220530049" />
+    <state width="1820" height="221" key="GridCell.Tab.0.center/0.23.1440.877/1440.-157.1864.1057@1440.-157.1864.1057" timestamp="1588162420063" />
+    <state width="1820" height="289" key="GridCell.Tab.0.center/0.23.1440.877/1440.-157.1865.1057@1440.-157.1865.1057" timestamp="1589531747799" />
+    <state width="1820" height="289" key="GridCell.Tab.0.left" timestamp="1589531747799">
+      <screen x="1440" y="-157" width="1865" height="1057" />
+    </state>
+    <state width="1820" height="221" key="GridCell.Tab.0.left/0.23.1384.877@0.23.1384.877" timestamp="1588220530048" />
+    <state width="1820" height="221" key="GridCell.Tab.0.left/0.23.1440.877/1440.-157.1864.1057@1440.-157.1864.1057" timestamp="1588162420062" />
+    <state width="1820" height="289" key="GridCell.Tab.0.left/0.23.1440.877/1440.-157.1865.1057@1440.-157.1865.1057" timestamp="1589531747799" />
+    <state width="1820" height="289" key="GridCell.Tab.0.right" timestamp="1589531747800">
+      <screen x="1440" y="-157" width="1865" height="1057" />
+    </state>
+    <state width="1820" height="221" key="GridCell.Tab.0.right/0.23.1384.877@0.23.1384.877" timestamp="1588220530049" />
+    <state width="1820" height="221" key="GridCell.Tab.0.right/0.23.1440.877/1440.-157.1864.1057@1440.-157.1864.1057" timestamp="1588162420063" />
+    <state width="1820" height="289" key="GridCell.Tab.0.right/0.23.1440.877/1440.-157.1865.1057@1440.-157.1865.1057" timestamp="1589531747800" />
+    <state width="1820" height="193" key="GridCell.Tab.1.bottom" timestamp="1589531747791">
+      <screen x="1440" y="-157" width="1865" height="1057" />
+    </state>
+    <state width="1820" height="221" key="GridCell.Tab.1.bottom/0.23.1384.877@0.23.1384.877" timestamp="1588220530051" />
+    <state width="1820" height="221" key="GridCell.Tab.1.bottom/0.23.1440.877/1440.-157.1864.1057@1440.-157.1864.1057" timestamp="1588162420065" />
+    <state width="1820" height="193" key="GridCell.Tab.1.bottom/0.23.1440.877/1440.-157.1865.1057@1440.-157.1865.1057" timestamp="1589531747791" />
+    <state width="1820" height="193" key="GridCell.Tab.1.center" timestamp="1589531747790">
+      <screen x="1440" y="-157" width="1865" height="1057" />
+    </state>
+    <state width="1820" height="221" key="GridCell.Tab.1.center/0.23.1384.877@0.23.1384.877" timestamp="1588220530051" />
+    <state width="1820" height="221" key="GridCell.Tab.1.center/0.23.1440.877/1440.-157.1864.1057@1440.-157.1864.1057" timestamp="1588162420064" />
+    <state width="1820" height="193" key="GridCell.Tab.1.center/0.23.1440.877/1440.-157.1865.1057@1440.-157.1865.1057" timestamp="1589531747790" />
+    <state width="1820" height="193" key="GridCell.Tab.1.left" timestamp="1589531747789">
+      <screen x="1440" y="-157" width="1865" height="1057" />
+    </state>
+    <state width="1820" height="221" key="GridCell.Tab.1.left/0.23.1384.877@0.23.1384.877" timestamp="1588220530050" />
+    <state width="1820" height="221" key="GridCell.Tab.1.left/0.23.1440.877/1440.-157.1864.1057@1440.-157.1864.1057" timestamp="1588162420064" />
+    <state width="1820" height="193" key="GridCell.Tab.1.left/0.23.1440.877/1440.-157.1865.1057@1440.-157.1865.1057" timestamp="1589531747789" />
+    <state width="1820" height="193" key="GridCell.Tab.1.right" timestamp="1589531747790">
+      <screen x="1440" y="-157" width="1865" height="1057" />
+    </state>
+    <state width="1820" height="221" key="GridCell.Tab.1.right/0.23.1384.877@0.23.1384.877" timestamp="1588220530051" />
+    <state width="1820" height="221" key="GridCell.Tab.1.right/0.23.1440.877/1440.-157.1864.1057@1440.-157.1864.1057" timestamp="1588162420065" />
+    <state width="1820" height="193" key="GridCell.Tab.1.right/0.23.1440.877/1440.-157.1865.1057@1440.-157.1865.1057" timestamp="1589531747790" />
+    <state x="2093" y="88" key="RollbackChangesDialog" timestamp="1589456342790">
+      <screen x="1440" y="-157" width="1865" height="1057" />
+    </state>
+    <state x="2093" y="88" key="RollbackChangesDialog/0.23.1440.877/1440.-157.1865.1057@1440.-157.1865.1057" timestamp="1589456342790" />
+    <state x="1656" y="-54" width="1236" height="867" key="SettingsEditor" timestamp="1589459065397">
+      <screen x="1440" y="-157" width="1865" height="1057" />
+    </state>
+    <state x="1860" y="-47" key="SettingsEditor/0.23.1440.877/1440.-157.1864.1057@1440.-157.1864.1057" timestamp="1588160885745" />
+    <state x="1656" y="-54" width="1236" height="867" key="SettingsEditor/0.23.1440.877/1440.-157.1865.1057@1440.-157.1865.1057" timestamp="1589459065397" />
+    <state x="1972" y="111" key="Vcs.Push.Dialog.v2" timestamp="1589530648148">
+      <screen x="1440" y="-157" width="1865" height="1057" />
+    </state>
+    <state x="1972" y="111" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.-157.1864.1057@1440.-157.1864.1057" timestamp="1587979890040" />
+    <state x="1972" y="111" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.-157.1865.1057@1440.-157.1865.1057" timestamp="1589530648148" />
+    <state x="2120" y="295" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588162697345">
+      <screen x="1440" y="-157" width="1864" height="1057" />
+    </state>
+    <state x="2120" y="295" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877/1440.-157.1864.1057@1440.-157.1864.1057" timestamp="1588162697345" />
+    <state x="2013" y="116" width="717" height="510" key="find.popup" timestamp="1589445036657">
+      <screen x="1440" y="-157" width="1865" height="1057" />
+    </state>
+    <state x="2013" y="116" width="717" height="510" key="find.popup/0.23.1440.877/1440.-157.1865.1057@1440.-157.1865.1057" timestamp="1589445036657" />
+    <state x="1544" y="69" key="new project wizard" timestamp="1588160851683">
+      <screen x="1440" y="-157" width="1864" height="1057" />
+    </state>
+    <state x="1544" y="69" key="new project wizard/0.23.1440.877/1440.-157.1864.1057@1440.-157.1864.1057" timestamp="1588160851683" />
+    <state x="2037" y="166" key="run.anything.popup" timestamp="1589515128786">
+      <screen x="1440" y="-157" width="1865" height="1057" />
+    </state>
+    <state x="2037" y="166" key="run.anything.popup/0.23.1440.877/1440.-157.1865.1057@1440.-157.1865.1057" timestamp="1589515128786" />
+    <state x="2037" y="78" width="671" height="676" key="search.everywhere.popup" timestamp="1589453847819">
+      <screen x="1440" y="-157" width="1865" height="1057" />
+    </state>
+    <state x="2037" y="78" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/1440.-157.1864.1057@1440.-157.1864.1057" timestamp="1588086403622" />
+    <state x="2037" y="78" width="671" height="676" key="search.everywhere.popup/0.23.1440.877/1440.-157.1865.1057@1440.-157.1865.1057" timestamp="1589453847819" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/python_learn$clear_redis.coverage" NAME="clear_redis Coverage Results" MODIFIED="1589457477843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web-learn/learn" />
+    <SUITE FILE_PATH="coverage/python_learn$web.coverage" NAME="web Coverage Results" MODIFIED="1588161044137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web-learn/app" />
+    <SUITE FILE_PATH="coverage/python_learn$fmpValidateProcess.coverage" NAME="fmpValidateProcess Coverage Results" MODIFIED="1589527562368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web-learn/learn/fmp" />
+    <SUITE FILE_PATH="coverage/python_learn$fmp_validate.coverage" NAME="fmp_validate Coverage Results" MODIFIED="1589530594981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web-learn/learn/fmp" />
+    <SUITE FILE_PATH="coverage/python_learn$fmp_create.coverage" NAME="fmp_create Coverage Results" MODIFIED="1589527916243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web-learn/learn/fmp" />
+    <SUITE FILE_PATH="coverage/python_learn$clear_redis__1_.coverage" NAME="clear_redis (1) Coverage Results" MODIFIED="1589456830131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web-learn/learn" />
+  </component>
+</project>
