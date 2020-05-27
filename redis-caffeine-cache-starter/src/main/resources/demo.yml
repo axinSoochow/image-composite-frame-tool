@@ -15,6 +15,7 @@ cache.multi:
     expireAfterWrite: 60 #写入后过期时间，单位秒
     initialCapacity: 50 #初始化大小
     maximumSize: 50 #最大缓存对象个数，超过此数量时会使用Window TinyLfu策略来淘汰缓存
+
   # 最后一次访问或者写入后开始计时，expireAfterAccess = 120
   # 默认写入后过期时间，单位秒 expireAfterWrite = 120;
   #	默认初始化大小 initialCapacity = 50;
