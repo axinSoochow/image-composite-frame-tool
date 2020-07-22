@@ -1,0 +1,27 @@
+{
+    "tenantCode": "youpin",
+    "accountType": "smp-account",
+    "registerList": [
+        {
+            "bizAccount":"axin_1594894211491",
+            "nickName":"电商中台工具人",
+            "realName": "刘鑫",
+            "avatar": "",
+            "phone": "18068011754",
+            "email": "liuxin066@ke.com",
+            "gender": 1,
+            "birthday": 1594127562466
+        },
+        {
+            "bizAccount":"axin_1594894211491",
+            "nickName":"电商中台工具人",
+            "realName": "刘鑫",
+            "avatar": "",
+            "phone": "18068011754",
+            "email": "liuxin066@ke.com",
+            "gender": 1,
+            "birthday": 1594127562466
+        }
+
+    ]
+}
