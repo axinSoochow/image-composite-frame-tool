@@ -8,17 +8,18 @@ env_local = "http://localhost:6666"
 tenantCode = "jiayou"
 # accountType = "commerce-seller"
 accountType = "uc"
+# accountType = "smp-account"
 
 
 ucid = ""
 smpId = ""
-bizAccount = "1000000026029855"
+bizAccount = "1000000026537268"
 
 ucids = []
 smpIds = []
 bizAccounts = ["1000000026029855", "1000000026013467"]
 
-is_batch_query = True
+is_batch_query = False
 
 # 电商中台 - 用户查询自动化脚本
 if __name__ == '__main__':

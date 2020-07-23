@@ -7,11 +7,10 @@ env_local = "http://localhost:6666"
 # tenantCode = "youpin"
 tenantCode = "jiayou"
 
-ucid = ""
+ucid = "1000000026537268"
 accountType = "uc"
 bizAccount = "1000000026029855"
 
-is_batch_query = True
 
 # 电商中台 - 用户查询自动化脚本
 if __name__ == '__main__':

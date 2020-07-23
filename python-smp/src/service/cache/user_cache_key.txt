@@ -1,0 +1,2 @@
+bk-smp-user:cache:12h:SMP:TenantService:*
+bk-smp-user:cache:180m:SMP:BaseAccountService:*
