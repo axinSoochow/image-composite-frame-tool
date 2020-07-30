@@ -4,8 +4,8 @@
     "registerList": [
         {
             "bizAccount":"axin_1594894211491",
-            "nickName":"电商中台工具人",
-            "realName": "刘鑫",
+            "nickName":"江泽民",
+            "realName": "江泽民",
             "avatar": "",
             "phone": "18068011754",
             "email": "liuxin066@ke.com",
@@ -14,8 +14,8 @@
         },
         {
             "bizAccount":"axin_1594894211491",
-            "nickName":"电商中台工具人",
-            "realName": "刘鑫",
+            "nickName":"胡锦涛",
+            "realName": "胡锦涛",
             "avatar": "",
             "phone": "18068011754",
             "email": "liuxin066@ke.com",

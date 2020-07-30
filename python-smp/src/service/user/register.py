@@ -2,9 +2,9 @@
 
 from src.service.user.smp_register_processer import *
 
-# data_name = "data/register/smp_user.txt"
+data_name = "data/register/smp_user.txt"
 # data_name = "data/register/jiayou.txt"
-data_name = "data/register/uc.txt"
+# data_name = "data/register/uc.txt"
 
 
 env = "http://172.16.23.4:8080"
@@ -18,7 +18,7 @@ if __name__ == '__main__':
     param = json.loads(open(data_name).read())
     processer = SmpUserProcesser(env_local)
     try:
-        # change_key(change_key_list, param)
+        change_key(change_key_list, param)
         api_result = processer.register_user(param)
         print(api_result.text)
     except BaseException as err:
