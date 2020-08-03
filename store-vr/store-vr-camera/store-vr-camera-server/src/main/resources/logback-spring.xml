@@ -1,0 +1,48 @@
+<configuration scan="false">
+	<springProperty scope="local" name="logDir" source="logging.path"
+		defaultValue="./logs" />
+	<!-- 节点名称，默认为spring.application.name -->	
+	<springProperty scope="local" name="logNodeName"
+		source="spring.application.name" defaultValue="unknown" />
+    <!-- 输出格式 -->
+	<springProperty scope="local" name="logPattern" source="logging.appender.layoutPattern"
+		defaultValue="%d{yyyy-MM-dd HH:mm:ss.SSS} [%X{X-Trace-Id:--} | %thread] %-5level %logger{36} - %msg%n" />
+	
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<!-- encoder 默认配置为PatternLayoutEncoder -->
+		<encoder>
+			<pattern>${logPattern}</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="INFO"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<!-- encoder 默认配置为PatternLayoutEncoder -->
+		<encoder>
+			<pattern>${logPattern}</pattern>
+		</encoder>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${logDir}/%d{yyyy-MM-dd}/infoLog.log
+			</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>INFO</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>NEUTRAL</onMismatch>
+		</filter>
+	</appender>
+
+	<!-- Enable FILE and STDOUT appenders for all log messages. By default, 
+		only log at level INFO and above. -->
+	<root level="INFO">
+		<springProfile name="!production">
+			<appender-ref ref="STDOUT" />
+		</springProfile>
+		<appender-ref ref="INFO" />
+	</root>
+	<!-- 非生产环境，打印SQL语句 -->
+	<springProfile name="!production">
+		<logger name="dao" level="DEBUG" />
+	</springProfile>
+</configuration>

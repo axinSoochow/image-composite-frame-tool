@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration = \
+    com.ke.store.vr.camera.spi.SpiAutoConfiguration\

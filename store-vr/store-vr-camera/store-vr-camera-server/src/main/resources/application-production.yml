@@ -1,0 +1,68 @@
+#数据库各种使用场景及SQL规范请参考：http://doc.shtest.ke.com/infrastructure/database/overview.html
+#非生产环境数据库地址：http://wiki.lianjia.com/pages/viewpage.action?pageId=473679078
+#写库数据源
+datasource.common:
+  url: jdbc:mysql://mysql-k8s.shtest.ke.com:3306/zhidao?useSSL=false&allowMultiQueries=true&autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8&zeroDateTimeBehavior=convertToNull
+  username: zhidao
+  password: "ZD1344941579"
+  driverClassName: com.mysql.cj.jdbc.Driver
+  max-active: 10                #最大活跃连接数
+  max-idle: 1                   #最大空闲连接数
+  min-idle: 1                   #最小空闲连接数
+  initial-size: 1               #初始连接数   
+  max-wait: 5000               #从连接池获取可用连接的等待时长，单位毫秒 
+  testWhileIdle: true           #开启检测空闲连接是否可用
+  validationQuery: select 1     #检测时执行的SQL 
+  validationQueryTimeout: 2     #ValidationQuery执行超时时间，单位秒
+  validationInterval: 120000    #同一个连接执行连接可用性检测的间隔，单位毫秒
+
+#只读库数据源   
+datasource.readonly:
+  url: jdbc:mysql://mysql-k8s.shtest.ke.com:3306/zhidao?useSSL=false&allowMultiQueries=true&autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8&zeroDateTimeBehavior=convertToNull
+  username: zhidao
+  password: "ZD1344941579"
+  driverClassName: com.mysql.cj.jdbc.Driver
+  max-active: 10                #最大活跃连接数
+  max-idle: 1                   #最大空闲连接数
+  min-idle: 1                   #最小空闲连接数
+  initial-size: 1               #初始连接数   
+  max-wait: 5000               #从连接池获取可用连接的等待时长，单位毫秒 
+  testWhileIdle: true           #开启检测空闲连接是否可用
+  validationQuery: select 1     #检测时执行的SQL 
+  validationQueryTimeout: 2     #ValidationQuery执行超时时间，单位秒
+  validationInterval: 120000    #同一个连接执行连接可用性检测的间隔，单位毫秒
+ 
+
+#非生产环境redis地址：http://wiki.lianjia.com/pages/viewpage.action?pageId=199491612
+#redis配置，see RedisProperties，申请redis请参考：http://doc.shtest.ke.com/infrastructure/redis/overview.html
+spring.redis:
+      # Connection URL, will override host, port and password (user will be ignored), e.g. redis://user:password@example.com:6379
+      url: redis://m-redis-k8s.shtest.ke.com:37379
+      timeout: 6s # 连接或读取超时时长
+      jedis.pool:
+            maxActive: 8  # 连接池最大连接数（使用负值表示没有限制）
+            maxWait: 800ms # 连接池最大阻塞等待时间（使用负值表示没有限制）
+            maxIdle: 8 # 连接池中的最大空闲连接
+            minIdle: 2 # 连接池中的最小空闲连接
+
+#限流配置                 
+demo.ratelimit:
+      verifyCode:
+         #验证码支持的业务类型
+          bizTypes: >
+                    login,
+                    password_modify,
+                    change_mobile
+          #验证码的限流策略 
+          #基于真实IP的限流策略          
+          ipLimit: 
+                durationSeconds: 3600 #1小时
+                permits: 600   #同一个IP60分钟内发送次数超过600次就必须输入图形验证码
+          #基于deviceId的限流
+          deviceIdLimit:
+                durationSeconds: 1800 #30分钟
+                permits: 5   #一台设备30分钟内发送验证码次数超过5次就必须输入图形验证码
+          #一分钟内只允许发送一次 
+          mobileLimit:
+                durationSeconds: 60 #一分钟
+                permits: 1   #只允许发送一次 

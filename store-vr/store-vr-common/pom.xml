@@ -1,0 +1,95 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.ke.store.vr</groupId>
+		<artifactId>store-vr</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath/>
+	</parent>
+
+	<groupId>com.ke.store.vr</groupId>
+	<artifactId>store-vr-common</artifactId>
+	<packaging>jar</packaging>
+	<version>1.0.0-SNAPSHOT</version>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.ke.store.vr</groupId>
+			<artifactId>store-vr-domain</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.ke.ctt</groupId>
+			<artifactId>mr.right-starter-cache-redis</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.ke.ctt</groupId>
+			<artifactId>mr.right-starter-db-mysql</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-mongodb</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>cn.hutool</groupId>
+			<artifactId>hutool-core</artifactId>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<!-- 如果生成Api文档的话，可使用mvn install apidoc -DskipTests=true -->
+			<plugin>
+				<groupId>com.lianjia.ctt</groupId>
+				<artifactId>doc-maven-plugin</artifactId>
+				<configuration>
+					<!-- app推荐和spring.application.name保持一致，用于唯一标识一个服务 -->
+					<!-- 更多选项，请参考：http://doc.shtest.ke.com/common-knowledge/api/doc-auto.html -->
+					<options>
+						-app "store-vr-common-server" -appName "${project.name}"
+					</options>
+				</configuration>
+			</plugin>
+			<!-- 静态检查第三方依赖 ，参考文档：http://doc.shtest.ke.com/common-knowledge/optimus/release-note/2.1.9-upgrade-guidline.html#%E5%9B%9B-%E9%9D%99%E6%80%81%E6%A3%80%E6%9F%A5%E7%AC%AC%E4%B8%89%E6%96%B9%E4%BE%9D%E8%B5%96 -->
+			<plugin>
+				<groupId>com.lianjia.ctt</groupId>
+				<artifactId>jaranalyzer-maven-plugin</artifactId>
+			</plugin>
+			<!-- 代码风格和质量检查,可使用MVN命令： clean checkstyle:check package pmd:check -DskipTests=true -->
+			<!-- 代码质量检查 package pmd:check -DskipTests=true -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-pmd-plugin</artifactId>
+			</plugin>
+			<!-- 代码风格检查 checkstyle:check -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>
