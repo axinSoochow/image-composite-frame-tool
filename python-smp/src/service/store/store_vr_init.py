@@ -30,4 +30,3 @@ if __name__ == '__main__':
         processer.init_mysql_data(param)
         api_result = processer.store_vr_data_init(param)
         print(api_result.text)
-
