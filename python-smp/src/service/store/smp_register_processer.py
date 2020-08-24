@@ -52,10 +52,10 @@ class SmpVrProcesser(object):
     # mysql初始化操作
     def init_mysql_data(self, param):
         for data in param:
-            sql = "INSERT INTO `store_pms`.`t_store_vr`(`store_code`, `name`, `vr_name`, `brand_id`, `brand_name`, `province`, `province_name`, `city`, `city_name`, `area`, `area_name`, `address`, `store_property`, `store_property_name`, `store_type`, `latitude`, `longitude`, `state`, `cuser`, `ctime`, `muser`, `mtime`, `house_area`, `sign_date`, `station_num`, `sign_room_num`, `vr_url`, `pic_url`, `pic_first`, `floor_num`, `joint_acceptance_date`, `showcase_area`, `door_area`, `owner_name`, `owner_phone`) VALUES ('{}', 'axin的小店', 'axin的小店', 20, '链家', '110000', '北京', '110000', '北京', '110000', '和平区', '沈阳市和平区沙岗西路112号，114号，116号1层', 1005, '大店', '优店', 66.0000000, 66.0000000, 1, 1000000021330256, '2020-04-15 13:33:48', 1000000010072066, '2020-06-04 16:54:55', 111.40, '1000-01-01 00:00:00', 66, 66, '', '', '', 66, '2019-10-22', 66.00, 66.00, '刘鑫', '14685471313')".format(data["storeCode"])
+            sql = "INSERT INTO `store_pms`.`t_store`(`store_code`, `name`, `brand_id`, `sign_status`, `province`, `city`, `area`, `address`, `store_property`, `image_finish`, `latitude`, `longitude`, `group_id`, `state`, `cuser`, `ctime`, `muser`, `mtime`, `war_area`, `province_area`, `house_area`, `store_number`, `month_rent`, `sign_date`, `payer_name`, `payer_phone`, `close_desc`, `close_proof`, `area_pic_type`, `release_time`, `intention_date`, `data_from`, `startup_fund_time`, `ehr_code`, `monthly_repayment`, `repayment_periods`, `project_status`, `close_status`, `close_image`, `bd_name`, `bd_phone`, `bd_networking_time`, `contract_effet_date`, `contract_subject_type`, `other_contract_subject`, `monthly_repay_date`, `first_repay_date`, `last_repay_date`, `contract_type`, `is_assessment`) VALUES ('{}', 'axin的小店', 243, 7002, '110000', '110000', '', '北京市贝壳找房', 1003, 8001, 29.6929870, 106.6106010, 87, 1, 0, '2019-09-03 20:23:47', 1000000010099438, '2020-03-12 17:40:36', '西部', '', 50.00, 'CQ_14_258570', 0.00, '2019-08-31 00:00:00', '', '', '', '', 3, '1970-01-01 00:00:00', NULL, 0, '2019-09-18 13:36:25', '\'\'', 0, 0, 32002, 0, NULL, '张鑫', '13983961603', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0);".format(data["storeCode"])
             cursor = self.mysql.cursor()
             try:
-                cursor.execute(sql)
+                sql_result = cursor.execute(sql)
                 self.mysql.commit()
             except:
                 self.mysql.rollback()
