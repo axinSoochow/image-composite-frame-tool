@@ -1,19 +1,19 @@
 # coding=utf-8
 import redis
 
-# bfa-test
+# ad-building-test
 host = "m-redis-k8s.shtest.ke.com"
-port = "37379"
-pwd = None
-db = 10
-keys_file = 'user_cache_key.txt'
+port = "37479"
+pwd = 'redis.shtest'
+db = 6
+keys_file = 'ad_building_cache_key.txt'
 
-# fmp-off
-# host = "m-redis-k8s.shoff.ke.com"
-# port = "38379"
-# pwd = None
-# db = 10
-# keys_file = 'user_cache_key.txt'
+# ad-building-生产
+host = "m11371.zeus.redis.ljnode.com"
+port = "11371"
+pwd = None
+db = 0
+keys_file = 'ad_building_cache_key.txt'
 
 if __name__ == '__main__':
     if pwd is not None:
