@@ -141,7 +141,6 @@ public class CompositeParamsUtils {
                     fontMaterial.setLineDistance(文字元素行间距);
                 }
             }
-
         }
         log.debug("image-composite: default params end...");
     }
