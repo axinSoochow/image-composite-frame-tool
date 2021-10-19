@@ -1,0 +1,4 @@
+bk-smp-user:cache:12h:SMP:TenantService:*
+bk-smp-user:cache:180m:SMP:BaseAccountService:*
+bk-smp-user:cache:60m:SMP:RoleService:getAllRoleByUCID:*
+bk-smp-user:cache:60m:SMP:RoleService:getAllDataPerm:*
