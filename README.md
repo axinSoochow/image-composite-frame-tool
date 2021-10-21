@@ -41,4 +41,8 @@ String[] fontNames = e.getAvailableFontFamilyNames();
 
 ![image](http://axin-soochow.oss-cn-hangzhou.aliyuncs.com/21-10/image2021-1-26_17-4-12.png)
 
+可以看到文字素材的增多几乎不会对合成耗时造成影响
+
 ![image](http://axin-soochow.oss-cn-hangzhou.aliyuncs.com/21-10/image2021-1-27_14-48-4.png)
+
+可估算出每增加一个文字素材会占用约1MB的堆内存。
